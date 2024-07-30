@@ -28,7 +28,7 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">About Me</a></li>
-								<li><a href="#work">Work</a></li>
+								<li class="is-middle"><a href="#work">Work</a></li>
 								<li><a href="#about">Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!-- <li><a href="#elements">Elements</a></li> -->
@@ -44,7 +44,7 @@
 								<h2 class="major">About Me</h2>
 								<span class="image main"><img src="images/Work.jpg" alt="Andrew Ahrenkiel" /></span>
 								<p>Hi! I'm Andrew Ahrenkiel, an innovative Software Engineer with a passion for new technology. I am a first-generation college student currently pursuing a bachelors degree in Software Engineering from <a href="https://www.iastate.edu/">Iowa State University</a>. With a diverse background in engineering and a passion for learning, I am always looking for new challenges to problem solve and apply my skill set to!</p>
-								<p>With intentions of graduating in spring of 2025, I'm exploring the industry for Full-Time positions. I am particullarly interested in AI-Engineering and Full-Stack Engineering positions within collaborative agile enviornments where cutting edge technology is prioritized. Feel free to connect with me below!</p>
+								<p>With intentions of graduating in spring of 2025, I'm exploring the industry for Full-Time positions. I am particullarly interested in AI-Engineering and Full-Stack Development positions within collaborative agile enviornments where cutting edge technology is prioritized. Feel free to connect with me below!</p>
 								<p>Outside of my professional life, I enjoy spending time with my friends and family. Some of my hobbies include discovering new music, cars, reading, video games, sports, and all things tech! If your interested in anything from wrenching on cars to the newest consumer tech on the market, connect with me below and lets talk!</p>
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/andrew-ahrenkiel/" class="icon brands fa-linkedin" target="_blank"><span class="label">Github</span></a></li>
@@ -65,7 +65,10 @@
 								<div id="content1" class="tab-content">
 									<h3>Software Engineering Intern - Wells Fargo</h3>
 									<span class="image main"><img src="images/wells.jpg" alt="Andrew Ahrenkiel" /></span>
-									<p style="font-weight: bold;">Charlotte, North Carolina - May 2024 to August 2024</p>
+									<div class="container">
+										<div class="title">Charlotte, North Carolina</div>
+										<div class="date">May 2024 to August 2024</div>
+									</div>
 									<p>I worked as a Software Engineering Intern for Wells Fargo addressing business needs in Wealth & Investment Management
 										Technolgoies. Operated as a Full Stack Engineer with an application development team in an agile enviorment.
 										Increased code coverage of team applications by 15%, increasing code quality and decreasing risk in SDLC. Designed
@@ -74,12 +77,28 @@
 									<hr>
 									<h3>Systems Operations Associate - Wells Fargo</h3>
 									<span class="image main"><img src="images/wells.jpg" alt="Andrew Ahrenkiel" /></span>
-									<p style="font-weight: bold;">Des Moines, Iowa - May 2023 to August 2023</p>
+									<div class="container">
+										<div class="title">Des Moines, Iowa</div>
+										<div class="date">May 2023 to August 2023</div>
+									</div>
 									<p>I worked as a Systems Operations Associate on an agile DevOps team to address business needs for the Enterprise Pipe Line. Worked to identify and problem solve Checkmarx exit codes to increase reliability of the SDLC.
 										Worked with CICD Tools such as Jenkins, Checkmarx, Sonarqube, Blackduck, TruffleHog, Jira, Elastic, Junit5,
 										Java Mutations Testing, Prometheus, Gradle, Maven, DotNet, and MSBuild to ensure code quality and security.</p>
 									</p>
 									<hr>
+									<h3>Software Engineering Fellow</h3>
+									<span class="image main"><img src="images/headstarter.png" alt="Andrew Ahrenkiel" /></span>
+									<div class="container">
+										<div class="title">Remote</div>
+										<div class="date">July 2024 to Present</div>
+									</div>
+									
+									<p>I joined the Headstarter Software Engineering Fellowship to gain more experience with new and innovative AI projects. Over the next 7 weeks I will build
+										Multiple AI based projects with a goal of innovation and impact. I will be creating a final project with the goal of reaching 1000 users and making a positive impact on the world. I will be updating my projects section with these new
+										projects as I complete them, so be sure to check them out!
+									</p>
+									</p>
+									</p>
 								</div>
 								
 								<div id="content2" class="tab-content">
@@ -93,9 +112,30 @@
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">Resume</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+								<div id="adobe-dc-view"></div>
+								<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
+								
+								<script type="text/javascript">
+									document.addEventListener("adobe_dc_view_sdk.ready", function()
+									{
+									   var adobeDCView = new AdobeDC.View({clientId: "c02a6c21c85a49b88bd5641330430bae", divId: "adobe-dc-view"});
+									   adobeDCView.previewFile(
+									  {
+										  content:  {location: {url: "./docs/resume.pdf"}},
+										  metaData: {fileName: "resume.pdf"}
+									  },
+									  {
+										embedMode: "IN_LINE",
+										showDownloadPDF: false,
+										showPrintPDF: true,
+										showAnnotationTools: false,
+										showLeftHandPanel: false
+									  }
+									);
+									});
+								   </script>
+								
+								</article>
 
 						<!-- Contact -->
 							<article id="contact">

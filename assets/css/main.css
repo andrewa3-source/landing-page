@@ -1684,3 +1684,20 @@ input, select, textarea {
         article .tab-content.active {
             display: block;
 		}
+
+		.title {
+			font-weight: bold;
+			font-style: italic;
+		}
+
+		.date {
+			text-align: right;
+			font-family: 'Georgia', serif;
+			font-style: italic;
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
