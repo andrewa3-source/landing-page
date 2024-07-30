@@ -56,10 +56,37 @@
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h2 class="major">Projects and Experience</h2>
+
+								<div class="tab-buttons">
+									<button class="tab-button" onclick="showTab('content1')">Experience</button>
+									<button class="tab-button" onclick="showTab('content2')">Personal Projects</button>
+								</div>
+								<div id="content1" class="tab-content">
+									<h3>Software Engineering Intern - Wells Fargo</h3>
+									<span class="image main"><img src="images/wells.jpg" alt="Andrew Ahrenkiel" /></span>
+									<p style="font-weight: bold;">Charlotte, North Carolina - May 2024 to August 2024</p>
+									<p>I worked as a Software Engineering Intern for Wells Fargo addressing business needs in Wealth & Investment Management
+										Technolgoies. Operated as a Full Stack Engineer with an application development team in an agile enviorment.
+										Increased code coverage of team applications by 15%, increasing code quality and decreasing risk in SDLC. Designed
+										and created project to migrate data from existing MongoDB to Oracle in recurring jobs. Designed new schema from
+										scratch and used direct connecting python script to map NoSQL to SQL relational table. This implementation increased reporting performance and allowed for the opportunity to store and access historic reports.</p>
+									<br>
+									<h3>Systems Operations Associate - Wells Fargo</h3>
+									<span class="image main"><img src="images/wells.jpg" alt="Andrew Ahrenkiel" /></span>
+									<p style="font-weight: bold;">Des Moines, Iowa - May 2023 to August 2023</p>
+									<p>I worked as a Systems Operations Associate on an agile DevOps team to address business needs for the Enterprise Pipe Line. Worked to identify and problem solve Checkmarx exit codes to increase reliability of the SDLC.
+										Worked with CICD Tools such as Jenkins, Checkmarx, Sonarqube, Blackduck, TruffleHog, Jira, Elastic, Junit5,
+										Java Mutations Testing, Prometheus, Gradle, Maven, DotNet, and MSBuild to ensure code quality and security.</p>
+									</p>
+								</div>
+								
+								<div id="content2" class="tab-content">
+									<h3>Personal Projects</h3>
+									<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+									<p>Coming Soon!</p>
+								</div>
+
 							</article>
 
 						<!-- About -->
@@ -355,6 +382,27 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script>
+				function showTab(tabId) {
+					var tabs = document.querySelectorAll('.tab-content');
+					var buttons = document.querySelectorAll('.tab-button');
+		
+					tabs.forEach(function(tab) {
+						tab.classList.remove('active');
+					});
+		
+					buttons.forEach(function(button) {
+						button.classList.remove('active');
+					});
+		
+					document.getElementById(tabId).classList.add('active');
+					document.querySelector('.tab-buttons button[onclick="showTab(\'' + tabId + '\')"]').classList.add('active');
+				}
+
+				document.addEventListener('DOMContentLoaded', function() {
+            		showTab('content1');
+        		});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
